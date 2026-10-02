@@ -1,0 +1,17 @@
+Package: rsquareddata
+Title: Teaching Datasets for Rsquared Academy Ebooks and Courses
+Version: 0.1.0
+Authors@R:
+    person("Aravind", "Hebbali", email = "hebbali.aravind@gmail.com", role = c("aut", "cre"))
+Description: Shared teaching datasets used across Rsquared Academy ebooks,
+    tutorials and courses (data wrangling, visualization, SQL): ecommerce
+    sessions, messy strings, receivables, joins, high-school extracts and web
+    analytics, plus Excel/Stata/SPSS/SAS import examples in `inst/extdata`.
+License: CC0
+Depends:
+    R (>= 4.1)
+LazyData: true
+Config/roxygen2/version: 8.1.0
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+URL: https://github.com/rsquaredacademy-education/rsquareddata

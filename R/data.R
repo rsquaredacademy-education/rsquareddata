@@ -1,0 +1,61 @@
+#' Ecommerce site behaviour and orders (`ecom`)
+#'
+#' 1001 sessions with device, referrer, pages/visits, purchase flag and
+#' order value/items.
+#'
+#' @format A data frame with 1001 rows and 8 variables.
+#' @source <https://github.com/rsquaredacademy-education/datasets> (`web.csv`), CC0-1.0.
+"ecom"
+
+#' Messy strings for stringr practice (`mockstring`)
+#'
+#' 1001 rows of emails, image URLs and page URLs for domain/extension/protocol parsing.
+#'
+#' @format A data frame with 1001 rows.
+#' @source <https://github.com/rsquaredacademy-education/datasets> (`mock_strings.csv`), CC0-1.0.
+"mockstring"
+
+#' Receivables invoices (`transact`)
+#'
+#' 2467 invoices with Invoice, Due and Payment dates for lubridate practice.
+#'
+#' @format A data frame with 2467 rows.
+#' @source <https://github.com/rsquaredacademy-education/datasets> (`transact.csv`), CC0-1.0.
+"transact"
+
+#' Orders and customers for joins (`order`, `customer`)
+#'
+#' 300 orders and 91 customers (semicolon-delimited at source) used to drill
+#' `*_join()` verbs.
+#'
+#' @format Two data frames: `order` (300 rows), `customer` (91 rows).
+#' @source <https://github.com/rsquaredacademy-education/datasets>, CC0-1.0.
+#' @aliases customer
+"order"
+
+#' High-school-and-beyond extracts (`hsb`, `hsb1`–`hsb5`)
+#'
+#' Small CSVs for flat-file import drills: delimiters, `col_types`, `skip`, `n_max`.
+#'
+#' @format Data frames of ~200 rows each.
+#' @source <https://github.com/rsquaredacademy-education/datasets>, CC0-1.0.
+#' @aliases hsb1 hsb2 hsb3 hsb4 hsb5
+"hsb"
+
+#' Employee hire/termination dates (`hr_data`)
+#'
+#' Used for employment-length exercises in the lubridate chapter.
+#'
+#' @format A data frame with hire and termination dates.
+#' @source <https://github.com/rsquaredacademy-education/datasets> (`hr-data.csv`), CC0-1.0.
+"hr_data"
+
+#' Web analytics (`analytics`, `analytics_raw`)
+#'
+#' Session-level analytics for the factors chapters. `analytics` is the
+#' analysis-ready extract; `analytics_raw` is the uncleaned export.
+#'
+#' @format Two data frames (see `str()` for columns).
+#' @source Rsquared Academy, CC0-1.0.
+#' @aliases analytics_raw
+"analytics"
