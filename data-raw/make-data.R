@@ -32,3 +32,9 @@ usethis::use_data(ecom, mockstring, transact, order, customer,
 # `date` stays text and `sunny` is logical.
 weather <- utils::read.csv(file.path(base, "weather.csv"))
 usethis::use_data(weather, overwrite = TRUE, compress = "xz")
+
+# Course 3 (Data Viz with ggplot2). `date` stays text, as the course README
+# specifies; the line lessons plot against `day`.
+store_days <- readr::read_csv(file.path(base, "store_days.csv"),
+                              col_types = readr::cols(date = readr::col_character()))
+usethis::use_data(store_days, overwrite = TRUE, compress = "xz")
