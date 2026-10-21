@@ -27,3 +27,8 @@ usethis::use_data(ecom, mockstring, transact, order, customer,
                   hsb, hsb1, hsb2, hsb3, hsb4, hsb5, hr_data,
                   analytics, analytics_raw,
                   overwrite = TRUE, compress = "xz")
+
+# Course data (lms). Read with base read.csv, as the Intro to R lessons do, so
+# `date` stays text and `sunny` is logical.
+weather <- utils::read.csv(file.path(base, "weather.csv"))
+usethis::use_data(weather, overwrite = TRUE, compress = "xz")
