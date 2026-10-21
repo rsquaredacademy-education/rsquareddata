@@ -75,3 +75,23 @@
 #' }
 #' @source <https://github.com/rsquaredacademy-publications/datasets> (`weather.csv`), CC0-1.0.
 "weather"
+
+#' Bean & Barrel store-day sales (`store_days`)
+#'
+#' One row per store per trading day for a fictional coffee chain: 9 stores in
+#' 5 countries over 20 days of March 2026. Used in the Data Viz with ggplot2
+#' course.
+#'
+#' @format A tibble with 180 rows and 8 variables:
+#' \describe{
+#'   \item{day}{Trading day in the sample, 1–20.}
+#'   \item{date}{ISO date text, `2026-03-01` to `2026-03-20`.}
+#'   \item{store_id}{Store, `ST-01` to `ST-09`.}
+#'   \item{city}{Store city.}
+#'   \item{country}{Store country (Canada, India, Germany, Kenya, Portugal).}
+#'   \item{customers}{Paying customers that day.}
+#'   \item{revenue_usd}{Money taken that day, US dollars.}
+#'   \item{avg_wait_min}{Mean wait at the counter, minutes.}
+#' }
+#' @source <https://github.com/rsquaredacademy-publications/datasets> (`store_days.csv`), CC0-1.0.
+"store_days"
