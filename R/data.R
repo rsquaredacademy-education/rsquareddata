@@ -59,3 +59,19 @@
 #' @source Rsquared Academy, CC0-1.0.
 #' @aliases analytics_raw
 "analytics"
+
+#' Daily weather for three Indian cities (`weather`)
+#'
+#' 20 days of June 2026 weather for Pune, Mumbai and Bengaluru, used in the
+#' Intro to R course (reading a CSV, vectors, data frames, plots).
+#'
+#' @format A data frame with 60 rows and 5 variables:
+#' \describe{
+#'   \item{date}{Day of the reading, ISO `YYYY-MM-DD` text.}
+#'   \item{city}{`Pune`, `Mumbai` or `Bengaluru` (20 rows each).}
+#'   \item{temp_c}{Daily high temperature, degrees Celsius.}
+#'   \item{rain_mm}{Rainfall, millimetres.}
+#'   \item{sunny}{`TRUE` when `rain_mm` is 0.}
+#' }
+#' @source <https://github.com/rsquaredacademy-publications/datasets> (`weather.csv`), CC0-1.0.
+"weather"
