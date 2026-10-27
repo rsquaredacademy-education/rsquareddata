@@ -82,7 +82,7 @@
 #' 5 countries over 20 days of March 2026. Used in the Data Viz with ggplot2
 #' course.
 #'
-#' @format A tibble with 180 rows and 8 variables:
+#' @format A tibble with 180 rows and 9 variables:
 #' \describe{
 #'   \item{day}{Trading day in the sample, 1–20.}
 #'   \item{date}{ISO date text, `2026-03-01` to `2026-03-20`.}
@@ -90,8 +90,46 @@
 #'   \item{city}{Store city.}
 #'   \item{country}{Store country (Canada, India, Germany, Kenya, Portugal).}
 #'   \item{customers}{Paying customers that day.}
-#'   \item{revenue_usd}{Money taken that day, US dollars.}
+#'   \item{revenue_usd}{Revenue that day, US dollars.}
+#'   \item{avg_spend_usd}{Revenue per customer that day (`revenue_usd / customers`, 2 dp), US dollars.}
 #'   \item{avg_wait_min}{Mean wait at the counter, minutes.}
 #' }
 #' @source <https://github.com/rsquaredacademy-publications/datasets> (`store_days.csv`), CC0-1.0.
 "store_days"
+
+#' Bean & Barrel sales (`sales`)
+#'
+#' One row per sale for a fictional coffee chain: 160 sales over 20 days of
+#' March 2026. Used in the Data Wrangling with dplyr and Data Viz with ggplot2
+#' courses. Joins to [stores] on `store_id`.
+#'
+#' @format A tibble with 160 rows and 7 variables:
+#' \describe{
+#'   \item{sale_id}{Sale, `S-0001` to `S-0160`.}
+#'   \item{sale_date}{ISO date text, `2026-03-01` to `2026-03-20`.}
+#'   \item{store_id}{Store, `ST-01` to `ST-09`.}
+#'   \item{product}{Cappuccino, Cold Brew, Espresso, Latte or Tea.}
+#'   \item{size}{Small, Medium or Large.}
+#'   \item{units}{Cups sold in the sale.}
+#'   \item{revenue_usd}{Revenue from the sale, US dollars.}
+#' }
+#' @source <https://github.com/rsquaredacademy-publications/datasets> (`sales.csv`), CC0-1.0.
+"sales"
+
+#' Bean & Barrel stores (`stores`)
+#'
+#' One row per store of a fictional coffee chain: 9 stores in 5 countries.
+#' Used in the Data Wrangling with dplyr course (joins). Joins to [sales] on
+#' `store_id`.
+#'
+#' @format A tibble with 9 rows and 6 variables:
+#' \describe{
+#'   \item{store_id}{Store, `ST-01` to `ST-09`.}
+#'   \item{store_name}{Store name.}
+#'   \item{city}{Store city.}
+#'   \item{country}{Store country.}
+#'   \item{opened_year}{Year the store opened.}
+#'   \item{seats}{Seats in the store.}
+#' }
+#' @source <https://github.com/rsquaredacademy-publications/datasets> (`stores.csv`), CC0-1.0.
+"stores"

@@ -5,7 +5,7 @@
 \alias{store_days}
 \title{Bean & Barrel store-day sales (\code{store_days})}
 \format{
-A tibble with 180 rows and 8 variables:
+A tibble with 180 rows and 9 variables:
 \describe{
 \item{day}{Trading day in the sample, 1–20.}
 \item{date}{ISO date text, \code{2026-03-01} to \code{2026-03-20}.}
@@ -13,7 +13,8 @@ A tibble with 180 rows and 8 variables:
 \item{city}{Store city.}
 \item{country}{Store country (Canada, India, Germany, Kenya, Portugal).}
 \item{customers}{Paying customers that day.}
-\item{revenue_usd}{Money taken that day, US dollars.}
+\item{revenue_usd}{Revenue that day, US dollars.}
+\item{avg_spend_usd}{Revenue per customer that day (\code{revenue_usd / customers}, 2 dp), US dollars.}
 \item{avg_wait_min}{Mean wait at the counter, minutes.}
 }
 }
