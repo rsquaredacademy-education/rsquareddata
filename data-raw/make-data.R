@@ -38,3 +38,9 @@ usethis::use_data(weather, overwrite = TRUE, compress = "xz")
 store_days <- readr::read_csv(file.path(base, "store_days.csv"),
                               col_types = readr::cols(date = readr::col_character()))
 usethis::use_data(store_days, overwrite = TRUE, compress = "xz")
+
+# Courses 2-3 (Bean & Barrel). Dates stay text, like store_days.
+sales  <- readr::read_csv(file.path(base, "sales.csv"),
+                          col_types = readr::cols(sale_date = readr::col_character()))
+stores <- readr::read_csv(file.path(base, "stores.csv"), show_col_types = FALSE)
+usethis::use_data(sales, stores, overwrite = TRUE, compress = "xz")
